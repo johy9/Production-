@@ -18,11 +18,12 @@ WORKDIR /app
 
 # Copy the built artifacts from the previous stage
 COPY requirements.txt /app/requirements.txt
+COPY app.py .
 
 
 # Expose port 5000
 EXPOSE 5000
 
 # Define the command to start the application
-CMD ["app.py"]
+CMD ["python", "app.py"]
 
