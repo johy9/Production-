@@ -24,5 +24,5 @@ COPY requirements.txt /app/requirements.txt
 EXPOSE 5000
 
 # Define the command to start the application
-CMD ["python", "app.py"]
+CMD ["app.py"]
 
